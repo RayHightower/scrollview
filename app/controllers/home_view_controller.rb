@@ -1,8 +1,9 @@
 class HomeViewController < UIViewController
   def viewDidLoad
     super
-    scroll_frame = view.frame
-    scroll = UIScrollView.alloc.initWithFrame scroll_frame
+    scroll_frame = view.bounds
+
+    scroll = UIScrollView.alloc.initWithFrame(scroll_frame)
     scroll.pagingEnabled = true
     scroll.contentSize = CGSizeMake(scroll_frame.width * 3, scroll_frame.height)
 
