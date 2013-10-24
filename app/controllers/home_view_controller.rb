@@ -10,7 +10,7 @@ class HomeViewController < UIViewController
     3.times do |i|
       subframe = scroll_frame.right(scroll_frame.width * 1)
       subview = UIView.alloc.initWithFrame(subframe)
-      subview.backgroundColor = [85,99,0].uicolor
+      # subview.backgroundColor = [85,99,0].uicolor
       scroll << subview
 
       header_frame = subview.bounds.down(30).right(30).width(150).height(20)
