@@ -15,7 +15,7 @@ class HomeViewController < UIViewController
 
       header_frame = subview.bounds.down(30).right(30).width(150).height(20)
       header_label.text = "This is page #{i + 1}."
-      header_label.backgroundcolor = :clear.uicolor
+      # header_label.backgroundcolor = :clear.uicolor
       subview << header_label
 
 
